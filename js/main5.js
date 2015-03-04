@@ -16,10 +16,10 @@
             var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game', { preload: preload, create: create, update: update });
 
             function preload() {
-                game.load.image('roadway', 'assets/TwoLane 1024.png');
-                game.load.image('sportscar', 'assets/Car.png');
-                game.load.image('dumptruck', 'assets/DumpTruck.png');
-                game.load.audio('angel','assets/Beat the Angel.WAV');
+                game.load.image('roadway', 'Assets/TwoLane 1024.png');
+                game.load.image('sportscar', 'Assets/Car.png');
+                game.load.image('dumptruck', 'Assets/DumpTruck.png');
+                game.load.audio('angel','Assets/Beat the Angel.WAV');
             }
 
             var mycar;
