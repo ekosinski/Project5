@@ -26,6 +26,7 @@
             var roadway;
             var cursors;
             var myswitch = false;
+            var score = 0;
 
             function create() {
 
@@ -91,6 +92,9 @@
                 else{
                     game.debug.text('Avoid the truck',32,62);
                 }
+
+                score = score + 1;
+                game.debug.text('Your score is ' + score);
 
             }
 
