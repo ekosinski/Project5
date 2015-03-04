@@ -18,7 +18,8 @@
             function preload() {
                 game.load.image('roadway', 'assets/TwoLane 1024.png');
                 game.load.image('sportscar', 'assets/Car.png');
-                game.load.image('dumptruck', 'assets/DumpTruck.png')
+                game.load.image('dumptruck', 'assets/DumpTruck.png');
+                game.load.audio('angel','assets/Beat the Angel.WAV');
             }
 
             var mycar;
@@ -27,6 +28,7 @@
             var cursors;
             var myswitch = false;
             var score = 0;
+            var angel;
 
             function create() {
 
@@ -53,7 +55,9 @@
                 //  And some controls to play the game with
                 cursors = game.input.keyboard.createCursorKeys();
 
-
+                angel = game.add.audio('angel');
+                angel.loop = true;
+                angel.play();
                 
             }
 
@@ -94,7 +98,7 @@
                 }
 
                 score = score + 1;
-                game.debug.text('Your score is ' + score);
+                game.debug.text('Your score is ' + score,43,72);
 
             }
 
